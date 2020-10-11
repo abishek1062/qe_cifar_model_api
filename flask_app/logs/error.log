@@ -1,0 +1,367 @@
+[2020-10-11 20:05:43 +0000] [8981] [INFO] Starting gunicorn 19.4.5
+[2020-10-11 20:05:43 +0000] [8981] [INFO] Listening at: http://127.0.0.1:8000 (8981)
+[2020-10-11 20:05:43 +0000] [8981] [INFO] Using worker: sync
+[2020-10-11 20:05:43 +0000] [8987] [INFO] Booting worker with pid: 8987
+[2020-10-11 20:05:43 +0000] [8987] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python2.7/dist-packages/gunicorn/util.py", line 366, in import_app
+    __import__(module)
+  File "/home/abishek/ddl-convnet/wsgi.py", line 1, in <module>
+    from app import app
+  File "/home/abishek/ddl-convnet/app.py", line 1, in <module>
+    import flask
+ImportError: No module named flask
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python2.7/dist-packages/gunicorn/util.py", line 366, in import_app
+    __import__(module)
+  File "/home/abishek/ddl-convnet/wsgi.py", line 1, in <module>
+    from app import app
+  File "/home/abishek/ddl-convnet/app.py", line 1, in <module>
+    import flask
+ImportError: No module named flask
+[2020-10-11 20:05:43 +0000] [8987] [INFO] Worker exiting (pid: 8987)
+[2020-10-11 20:05:43 +0000] [8988] [INFO] Booting worker with pid: 8988
+[2020-10-11 20:05:43 +0000] [8988] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python2.7/dist-packages/gunicorn/util.py", line 366, in import_app
+    __import__(module)
+  File "/home/abishek/ddl-convnet/wsgi.py", line 1, in <module>
+    from app import app
+  File "/home/abishek/ddl-convnet/app.py", line 1, in <module>
+    import flask
+ImportError: No module named flask
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python2.7/dist-packages/gunicorn/util.py", line 366, in import_app
+    __import__(module)
+  File "/home/abishek/ddl-convnet/wsgi.py", line 1, in <module>
+    from app import app
+  File "/home/abishek/ddl-convnet/app.py", line 1, in <module>
+    import flask
+ImportError: No module named flask
+[2020-10-11 20:05:43 +0000] [8988] [INFO] Worker exiting (pid: 8988)
+[2020-10-11 20:05:43 +0000] [8981] [INFO] Shutting down: Master
+[2020-10-11 20:05:43 +0000] [8981] [INFO] Reason: Worker failed to boot.
+[2020-10-11 20:05:49 +0000] [8989] [INFO] Starting gunicorn 19.4.5
+[2020-10-11 20:05:49 +0000] [8989] [INFO] Listening at: http://127.0.0.1:8000 (8989)
+[2020-10-11 20:05:49 +0000] [8989] [INFO] Using worker: sync
+[2020-10-11 20:05:49 +0000] [8993] [INFO] Booting worker with pid: 8993
+[2020-10-11 20:05:49 +0000] [8993] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python2.7/dist-packages/gunicorn/util.py", line 366, in import_app
+    __import__(module)
+  File "/home/abishek/ddl-convnet/wsgi.py", line 1, in <module>
+    from app import app
+  File "/home/abishek/ddl-convnet/app.py", line 1, in <module>
+    import flask
+ImportError: No module named flask
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python2.7/dist-packages/gunicorn/util.py", line 366, in import_app
+    __import__(module)
+  File "/home/abishek/ddl-convnet/wsgi.py", line 1, in <module>
+    from app import app
+  File "/home/abishek/ddl-convnet/app.py", line 1, in <module>
+    import flask
+ImportError: No module named flask
+[2020-10-11 20:05:49 +0000] [8993] [INFO] Worker exiting (pid: 8993)
+[2020-10-11 20:05:49 +0000] [8989] [INFO] Shutting down: Master
+[2020-10-11 20:05:49 +0000] [8989] [INFO] Reason: Worker failed to boot.
+[2020-10-11 20:05:57 +0000] [8997] [INFO] Starting gunicorn 19.4.5
+[2020-10-11 20:05:57 +0000] [8997] [INFO] Listening at: http://127.0.0.1:8000 (8997)
+[2020-10-11 20:05:57 +0000] [8997] [INFO] Using worker: sync
+[2020-10-11 20:05:57 +0000] [9001] [INFO] Booting worker with pid: 9001
+[2020-10-11 20:05:57 +0000] [9001] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python2.7/dist-packages/gunicorn/util.py", line 366, in import_app
+    __import__(module)
+  File "/home/abishek/ddl-convnet/wsgi.py", line 1, in <module>
+    from app import app
+  File "/home/abishek/ddl-convnet/app.py", line 1, in <module>
+    import flask
+ImportError: No module named flask
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python2.7/dist-packages/gunicorn/util.py", line 366, in import_app
+    __import__(module)
+  File "/home/abishek/ddl-convnet/wsgi.py", line 1, in <module>
+    from app import app
+  File "/home/abishek/ddl-convnet/app.py", line 1, in <module>
+    import flask
+ImportError: No module named flask
+[2020-10-11 20:05:57 +0000] [9001] [INFO] Worker exiting (pid: 9001)
+[2020-10-11 20:05:57 +0000] [8997] [INFO] Shutting down: Master
+[2020-10-11 20:05:57 +0000] [8997] [INFO] Reason: Worker failed to boot.
+[2020-10-11 20:06:24 +0000] [9019] [INFO] Starting gunicorn 19.4.5
+[2020-10-11 20:06:24 +0000] [9019] [INFO] Listening at: http://127.0.0.1:8000 (9019)
+[2020-10-11 20:06:24 +0000] [9019] [INFO] Using worker: sync
+[2020-10-11 20:06:24 +0000] [9023] [INFO] Booting worker with pid: 9023
+[2020-10-11 20:06:24 +0000] [9023] [ERROR] Exception in worker process:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python2.7/dist-packages/gunicorn/util.py", line 366, in import_app
+    __import__(module)
+  File "/home/abishek/ddl-convnet/wsgi.py", line 1, in <module>
+    from app import app
+  File "/home/abishek/ddl-convnet/app.py", line 1, in <module>
+    import flask
+ImportError: No module named flask
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/gunicorn/arbiter.py", line 515, in spawn_worker
+    worker.init_process()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 122, in init_process
+    self.load_wsgi()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/workers/base.py", line 130, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/usr/lib/python2.7/dist-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/lib/python2.7/dist-packages/gunicorn/util.py", line 366, in import_app
+    __import__(module)
+  File "/home/abishek/ddl-convnet/wsgi.py", line 1, in <module>
+    from app import app
+  File "/home/abishek/ddl-convnet/app.py", line 1, in <module>
+    import flask
+ImportError: No module named flask
+[2020-10-11 20:06:24 +0000] [9023] [INFO] Worker exiting (pid: 9023)
+[2020-10-11 20:06:24 +0000] [9019] [INFO] Shutting down: Master
+[2020-10-11 20:06:24 +0000] [9019] [INFO] Reason: Worker failed to boot.
+[2020-10-11 20:10:15 +0530] [9593] [INFO] Starting gunicorn 20.0.4
+[2020-10-11 20:10:15 +0530] [9593] [INFO] Listening at: http://127.0.0.1:8000 (9593)
+[2020-10-11 20:10:15 +0530] [9593] [INFO] Using worker: sync
+[2020-10-11 20:10:15 +0530] [9596] [INFO] Booting worker with pid: 9596
+[2020-10-11 20:10:15 +0530] [9598] [INFO] Booting worker with pid: 9598
+[2020-10-11 20:10:15 +0530] [9601] [INFO] Booting worker with pid: 9601
+[2020-10-11 20:10:15 +0530] [9602] [INFO] Booting worker with pid: 9602
+[2020-10-11 20:10:48 +0530] [9593] [INFO] Handling signal: int
+[2020-10-11 20:10:48 +0530] [9596] [INFO] Worker exiting (pid: 9596)
+[2020-10-11 20:10:48 +0530] [9602] [INFO] Worker exiting (pid: 9602)
+[2020-10-11 20:10:48 +0530] [9601] [INFO] Worker exiting (pid: 9601)
+[2020-10-11 20:10:48 +0530] [9598] [INFO] Worker exiting (pid: 9598)
+[2020-10-11 20:10:48 +0530] [9593] [INFO] Shutting down: Master
+[2020-10-11 23:30:25 +0530] [12119] [INFO] Starting gunicorn 20.0.4
+[2020-10-11 23:30:25 +0530] [12119] [ERROR] Connection in use: ('127.0.0.1', 8888)
+[2020-10-11 23:30:25 +0530] [12119] [ERROR] Retrying in 1 second.
+[2020-10-11 23:30:26 +0530] [12119] [ERROR] Connection in use: ('127.0.0.1', 8888)
+[2020-10-11 23:30:26 +0530] [12119] [ERROR] Retrying in 1 second.
+[2020-10-11 23:30:27 +0530] [12119] [ERROR] Connection in use: ('127.0.0.1', 8888)
+[2020-10-11 23:30:27 +0530] [12119] [ERROR] Retrying in 1 second.
+[2020-10-11 23:30:28 +0530] [12119] [ERROR] Connection in use: ('127.0.0.1', 8888)
+[2020-10-11 23:30:28 +0530] [12119] [ERROR] Retrying in 1 second.
+[2020-10-11 23:30:29 +0530] [12119] [ERROR] Connection in use: ('127.0.0.1', 8888)
+[2020-10-11 23:30:29 +0530] [12119] [ERROR] Retrying in 1 second.
+[2020-10-11 23:30:30 +0530] [12119] [ERROR] Can't connect to ('127.0.0.1', 8888)
+[2020-10-11 23:30:40 +0530] [12125] [INFO] Starting gunicorn 20.0.4
+[2020-10-11 23:30:40 +0530] [12125] [ERROR] Connection in use: ('127.0.0.1', 8888)
+[2020-10-11 23:30:40 +0530] [12125] [ERROR] Retrying in 1 second.
+[2020-10-11 23:30:41 +0530] [12125] [ERROR] Connection in use: ('127.0.0.1', 8888)
+[2020-10-11 23:30:41 +0530] [12125] [ERROR] Retrying in 1 second.
+[2020-10-11 23:30:42 +0530] [12125] [ERROR] Connection in use: ('127.0.0.1', 8888)
+[2020-10-11 23:30:42 +0530] [12125] [ERROR] Retrying in 1 second.
+[2020-10-11 23:30:43 +0530] [12125] [ERROR] Connection in use: ('127.0.0.1', 8888)
+[2020-10-11 23:30:43 +0530] [12125] [ERROR] Retrying in 1 second.
+[2020-10-11 23:30:44 +0530] [12125] [ERROR] Connection in use: ('127.0.0.1', 8888)
+[2020-10-11 23:30:44 +0530] [12125] [ERROR] Retrying in 1 second.
+[2020-10-11 23:30:45 +0530] [12125] [ERROR] Can't connect to ('127.0.0.1', 8888)
+[2020-10-11 23:31:12 +0530] [12152] [INFO] Starting gunicorn 20.0.4
+[2020-10-11 23:31:12 +0530] [12152] [INFO] Listening at: http://127.0.0.1:8000 (12152)
+[2020-10-11 23:31:12 +0530] [12152] [INFO] Using worker: sync
+[2020-10-11 23:31:12 +0530] [12155] [INFO] Booting worker with pid: 12155
+[2020-10-11 23:31:12 +0530] [12155] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/abishek/miniconda3/envs/ddl-convnet/lib/python3.6/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/abishek/miniconda3/envs/ddl-convnet/lib/python3.6/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/home/abishek/miniconda3/envs/ddl-convnet/lib/python3.6/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/abishek/miniconda3/envs/ddl-convnet/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/abishek/miniconda3/envs/ddl-convnet/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/home/abishek/miniconda3/envs/ddl-convnet/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/abishek/miniconda3/envs/ddl-convnet/lib/python3.6/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/home/abishek/miniconda3/envs/ddl-convnet/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named '/home/abishek/ddl-convnet/wsgi'
+[2020-10-11 23:31:12 +0530] [12155] [INFO] Worker exiting (pid: 12155)
+[2020-10-11 23:31:12 +0530] [12152] [INFO] Shutting down: Master
+[2020-10-11 23:31:12 +0530] [12152] [INFO] Reason: Worker failed to boot.
+[2020-10-11 23:31:19 +0530] [12157] [INFO] Starting gunicorn 20.0.4
+[2020-10-11 23:31:19 +0530] [12157] [INFO] Listening at: http://127.0.0.1:8000 (12157)
+[2020-10-11 23:31:19 +0530] [12157] [INFO] Using worker: sync
+[2020-10-11 23:31:19 +0530] [12160] [INFO] Booting worker with pid: 12160
+[2020-10-11 23:31:19 +0530] [12160] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/abishek/miniconda3/envs/ddl-convnet/lib/python3.6/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/abishek/miniconda3/envs/ddl-convnet/lib/python3.6/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/home/abishek/miniconda3/envs/ddl-convnet/lib/python3.6/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/abishek/miniconda3/envs/ddl-convnet/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/abishek/miniconda3/envs/ddl-convnet/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/home/abishek/miniconda3/envs/ddl-convnet/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/abishek/miniconda3/envs/ddl-convnet/lib/python3.6/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/home/abishek/miniconda3/envs/ddl-convnet/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named '/home/abishek/ddl-convnet/wsgi'
+[2020-10-11 23:31:19 +0530] [12160] [INFO] Worker exiting (pid: 12160)
+[2020-10-11 23:31:19 +0530] [12161] [INFO] Booting worker with pid: 12161
+[2020-10-11 23:31:19 +0530] [12161] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/abishek/miniconda3/envs/ddl-convnet/lib/python3.6/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/abishek/miniconda3/envs/ddl-convnet/lib/python3.6/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/home/abishek/miniconda3/envs/ddl-convnet/lib/python3.6/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/abishek/miniconda3/envs/ddl-convnet/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/abishek/miniconda3/envs/ddl-convnet/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/home/abishek/miniconda3/envs/ddl-convnet/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/abishek/miniconda3/envs/ddl-convnet/lib/python3.6/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/home/abishek/miniconda3/envs/ddl-convnet/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named '/home/abishek/ddl-convnet/wsgi'
+[2020-10-11 23:31:19 +0530] [12161] [INFO] Worker exiting (pid: 12161)
+[2020-10-11 23:31:20 +0530] [12157] [INFO] Shutting down: Master
+[2020-10-11 23:31:20 +0530] [12157] [INFO] Reason: Worker failed to boot.
+[2020-10-11 23:31:41 +0530] [12173] [INFO] Starting gunicorn 20.0.4
+[2020-10-11 23:31:41 +0530] [12173] [INFO] Listening at: http://127.0.0.1:8000 (12173)
+[2020-10-11 23:31:41 +0530] [12173] [INFO] Using worker: sync
+[2020-10-11 23:31:41 +0530] [12176] [INFO] Booting worker with pid: 12176
+[2020-10-11 23:31:41 +0530] [12178] [INFO] Booting worker with pid: 12178
+[2020-10-11 23:31:41 +0530] [12179] [INFO] Booting worker with pid: 12179
+[2020-10-11 23:31:41 +0530] [12181] [INFO] Booting worker with pid: 12181
+[2020-10-12 00:03:32 +0530] [12173] [INFO] Handling signal: int
+[2020-10-12 00:03:33 +0530] [12178] [INFO] Worker exiting (pid: 12178)
+[2020-10-12 00:03:33 +0530] [12179] [INFO] Worker exiting (pid: 12179)
+[2020-10-12 00:03:33 +0530] [12181] [INFO] Worker exiting (pid: 12181)
+[2020-10-12 00:03:33 +0530] [12176] [INFO] Worker exiting (pid: 12176)
+[2020-10-12 00:03:33 +0530] [12173] [INFO] Shutting down: Master
