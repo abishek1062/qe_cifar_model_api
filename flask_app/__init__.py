@@ -78,6 +78,7 @@ def get_image(base64string):
 
 # Create Flask application
 app = flask.Flask(__name__)
+app.wsgi_app = Net(app.wsgi_app)
 
 logHandler = logging.FileHandler('./flask_app/logs/app.log')
 logHandler.setLevel(logging.INFO)
