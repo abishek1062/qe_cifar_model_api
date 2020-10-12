@@ -1,19 +1,10 @@
-import flask
-from flask import Flask, request, jsonify
-import os
 import torch
 from torch.nn import Softmax
 import numpy as np
-from flask_app import app
 
-# Create a URL route in our application for "/"
-methods = ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'COPY', 'HEAD', 'OPTIONS', 'LINK', 'UNLINK', 'PURGE', 'LOCK', 'UNLOCK', 'PROPFIND', 'VIEW']
-
-@app.route('/',methods=methods)
-def recognizeImage():
+def recognizeImage(base64string):
     gpu_available = torch.cuda.is_available()
 
-    base64string = request.get_json(force=True)['base64']
     image = get_image(base64string)
 
     if image.shape[1:] != (3,32,32):
@@ -39,4 +30,4 @@ def recognizeImage():
         pred_dict[classes[i]] = str(prob)
 
 
-    return jsonify( prediction = pred_dict, message = "success!" )
+    return {'prediction' : pred_dict, 'message' : "success!" }
