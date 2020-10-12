@@ -2,6 +2,11 @@ import torch
 from torch.nn import Softmax
 import numpy as np
 
+with open("./sample_cifar10_base64/image0.txt") as f:
+    base64string = ''
+    for line in f.readlines():
+        base64string += line.rstrip('\n')
+
 def recognizeImage(base64string):
     gpu_available = torch.cuda.is_available()
 
