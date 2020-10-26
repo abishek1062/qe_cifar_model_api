@@ -40,20 +40,11 @@ class Net(nn.Module):
 
 
 def get_model():
-    gpu_available = torch.cuda.is_available()
-
-    #Loading model
-    # check if CUDA is available
-    gpu_available = torch.cuda.is_available()
 
     # create a complete CNN
     model = Net()
     model.load_state_dict(torch.load('./model_cifar.pt'))
     model.eval()
-
-    # move tensors to GPU if CUDA is available
-    if gpu_available:
-        model.cuda()    
 
     return model
 

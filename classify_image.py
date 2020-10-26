@@ -8,7 +8,6 @@ with open("./sample_cifar10_base64/image0.txt") as f:
     base64string = f.read()
 
 def recognizeImage(base64string):
-    gpu_available = torch.cuda.is_available()
 
     image = get_image(base64string)
 
@@ -17,14 +16,15 @@ def recognizeImage(base64string):
 
     model = get_model()
 
-    output_tensor = model(image.cuda())
+    output_tensor = model(image)
     output_tensor = Softmax(dim=1)(output_tensor)
     prob_pred_tensor, pred_tensor = torch.max(output_tensor, 1)
 
-    output = np.squeeze(output_tensor.detach().numpy()) if not gpu_available else np.squeeze(output_tensor.cpu().detach().numpy())
+    output = np.squeeze(output_tensor.detach().numpy()) 
 
-    prob_pred = np.squeeze(prob_pred_tensor.detach().numpy()) if not gpu_available else np.squeeze(prob_pred_tensor.cpu().detach().numpy())    
-    pred = np.squeeze(pred_tensor.detach().numpy()) if not gpu_available else np.squeeze(pred_tensor.cpu().detach().numpy())
+    prob_pred = np.squeeze(prob_pred_tensor.detach().numpy()) 
+
+    pred = np.squeeze(pred_tensor.detach().numpy()) 
 
     classes = ['airplane', 'automobile', 'bird', 'cat', 'deer','dog', 'frog', 'horse', 'ship', 'truck']
 
