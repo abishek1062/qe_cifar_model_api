@@ -4,6 +4,7 @@ Flask==1.1.2
 itsdangerous==1.1.0
 Jinja2==2.11.2
 MarkupSafe==1.1.1
+torch==1.2.0
 numpy @ file:///tmp/build/80754af9/numpy_and_numpy_base_1596233737064/work
 olefile==0.46
 Pillow @ file:///tmp/build/80754af9/pillow_1594307298074/work
