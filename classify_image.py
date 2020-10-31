@@ -8,8 +8,10 @@ with open("./sample_cifar10_base64/image0.txt") as f:
     base64string = f.read()
 
 def recognizeImage(base64string):
-
-    image = get_image(base64string)
+    try:
+        image = get_image(base64string)
+    except:
+        return jsonify(error="improper base64 encoding", message="failure!")
 
     if image.shape[1:] != (3,32,32):
         return jsonify( error = "only RGB image 32x32 accepted", message = "failure!" )
